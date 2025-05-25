@@ -1,3 +1,6 @@
+
+# !!! UN NFA CARE RECUNOASTE STRINGURILE DE FORMA 0^K UNDE K ESTE MULTIPLU DE 2 SAU 3
+
 def read_NFA(file_path):
     f=open(file_path, "r")
     lines=[line.strip() for line in f.readlines() if not line.strip().startswith("#")]
