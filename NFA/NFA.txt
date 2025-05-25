@@ -1,0 +1,26 @@
+~States~
+q0
+q1
+q2
+q3
+q4
+q5
+
+~Sigma~
+0
+
+~Rules~
+q0 EPSILON q1
+q0 EPSILON q3
+q1 0 q2
+q2 0 q1
+q3 0 q4
+q4 0 q5
+q5 0 q3
+
+~Start~
+q0
+
+~Stop~
+q1
+q3
