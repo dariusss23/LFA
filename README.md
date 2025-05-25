@@ -1,2 +1,2 @@
-# Limbaje-Formale-si-Automate-LFA-
-LFA
+# Limbaje Formale si Automate(LFA)
+
