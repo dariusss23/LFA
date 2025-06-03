@@ -1,0 +1,26 @@
+~States~
+q1
+q2
+q3
+q4
+
+~Sigma~
+0
+1
+
+~Gamma~
+0
+$
+
+~Rules~
+q1 EPSILON EPSILON $ q2
+q2 0 EPSILON 0 q2
+q2 1 0 EPSILON q3
+q3 1 0 EPSILON q3
+q3 EPSILON $ EPSILON q4
+
+~Start~
+q1
+
+~Stop~
+q4
