@@ -1,3 +1,6 @@
+
+# !!! PDA CARE ACCEPTA STRINGURILE 0^N 1^N
+
 def read_PDA(file_path):
     with open(file_path, "r") as f:
         lines=[line.strip() for line in f.readlines() if not line.strip().startswith("#")]
