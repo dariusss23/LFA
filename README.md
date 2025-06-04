@@ -67,3 +67,38 @@
 - `0000` (k=4): ✅ Acceptat
 - `00000` (k=5): ❌ Respins
 - `000000` (k=6): ✅ Acceptat
+
+
+## PDA
+
+1. Automatul este un PDA (Pushdown Automaton) definit in fisierul `PDA.txt`:
+    - **Stari (STATES):** `q1`, `q2`, `q3`, `q4`
+    - **Simboluri de intrare (SIGMA):** `0`, `1`
+    - **Simboluri de stiva (GAMMA):** `0`, `$`
+    - **Tranzitii (RULES):**
+        ```
+        q1 --EPSILON,EPSILON/$--> q2
+        q2 --0,EPSILON/0--> q2
+        q2 --1,0/EPSILON--> q3
+        q3 --1,0/EPSILON--> q3
+        q3 --EPSILON,$/EPSILON--> q4
+        ```
+    - **Stare Initiala (Start):** `q1`
+    - **Stari Finale (Stop):** `q4`
+
+### Functionalitate:
+- Accepta siruri de forma `0^n1^n` (n ≥ 1)
+- Pune pe stiva $ la inceput
+- Adauga 0 pe stiva pentru fiecare 0 citit
+- Scoate 0 din stiva pentru fiecare 1 citit
+- Accepta cand stiva revine la $
+
+### Exemple:
+- `01`: ✅ Acceptat
+- `0011`: ✅ Acceptat
+- `000111`: ✅ Acceptat
+- `1`: ❌ Respins
+- `011`: ❌ Respins
+- `001`: ❌ Respins
+- `0110`: ❌ Respins
+- `0101`: ❌ Respins
