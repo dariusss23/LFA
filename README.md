@@ -2,10 +2,10 @@
 
 ## DFA
 
-1. Labirintul este un DFA (Automat Finit Determinist) definit în fișierul `DFA.txt`:
-    - **Stări (STATES):** `ENTRANCE`, `HALLWAY`, `KITCHEN`, `SECRET_ROOM`, `LIBRARY`, `EXIT`
+1. Labirintul este un DFA (Automat Finit Determinist) definit In fiSierul `DFA.txt`:
+    - **StAri (STATES):** `ENTRANCE`, `HALLWAY`, `KITCHEN`, `SECRET_ROOM`, `LIBRARY`, `EXIT`
     - **Simboluri (SIGMA):** `UP`, `DOWN`, `LEFT`, `RIGHT`, `PICK`, `DROP`
-    - **Tranziții (RULES):**
+    - **TranziTii (RULES):**
         ```
         ENTRANCE    ----UP---->    HALLWAY
         HALLWAY     ---DOWN--->    ENTRANCE
@@ -17,8 +17,8 @@
         LIBRARY     ---LEFT--->    HALLWAY
         LIBRARY     ---DOWN--->    EXIT
         ```
-    - **Stare Inițială (Start):** `ENTRANCE`
-    - **Stări Finale (Stop):** `EXIT`
+    - **Stare IniTialA (Start):** `ENTRANCE`
+    - **Stari Finale (Stop):** `EXIT`
 
 ### Harta Labirintului
                       SECRET_ROOM
@@ -30,10 +30,10 @@
                       ENTRANCE
 
 ### Reguli de Joc
-- Folosește comenzile de mișcare (`UP`, `DOWN`, `LEFT`, `RIGHT`) pentru a naviga
+- Foloseste comenzile de miscare (`UP`, `DOWN`, `LEFT`, `RIGHT`) pentru a naviga
 - Comanda `PICK` ia lingura (doar în `KITCHEN`)
-- Comanda `DROP` lasă lingura
-- Poți ieși doar prin `LIBRARY` -> `EXIT` dacă ai lingura
+- Comanda `DROP` lasa lingura
+- Poti iesi doar prin `LIBRARY` -> `EXIT` daca ai lingura
 
-> **Note:** Ieșirea (`EXIT`) este accesibilă doar dacă ai colectat lingura din bucătărie!
+> **Note:** Iesirea (`EXIT`) este accesibila doar daca ai colectat lingura din bucatarie!
 ## NFA
