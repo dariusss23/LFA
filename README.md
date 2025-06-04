@@ -1,4 +1,5 @@
 # Limbaje Formale si Automate(LFA)
+# Sava Darius-Stefan (grupa 142)
 
 ## DFA
 
