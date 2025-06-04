@@ -102,3 +102,32 @@
 - `001`: ❌ Respins
 - `0110`: ❌ Respins
 - `0101`: ❌ Respins
+
+
+## Turing Machine (TM)
+
+1. Masina Turing este definita prin urmatoarele componente:
+    - **Stari (States):** `q0`, `q1`, `q2`, `qaccept`
+    - **Alfabet de intrare (Input Alphabet):** `1`, `+`, `$`
+    - **Alfabet de banda (Tape Alphabet):** `1`, `+`, `$`, `□` (blank)
+    - **Tranzitii (Transitions):**
+        ```
+        q0 --1--> q0: move right
+        q0 --+--> write '1', go to q1, move right
+        q1 --1--> q1: move right
+        q1 --$--> q2: move left
+        q2 --1--> write '$', go to qaccept
+        ```
+    - **Stare Initiala (Start State):** `q0`
+    - **Stare Finala (Accept State):** `qaccept`
+
+### Functionalitate:
+- Calculeaza suma a doua numere reprezentate in unar (ex: `111+111$` = 3 + 3)
+- Inlocuieste `+` cu `1` si sterge ultimul `1` pentru a obtine rezultatul corect
+- Rezultatul este numarul de `1`-uri ramase pe banda
+
+### Exemplu de rulare:
+```python
+Input: "1111+111$" (4 + 3)
+Output: "1111111$" (7)
+Rezultat final: 7
