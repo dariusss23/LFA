@@ -23,11 +23,11 @@
 ### Harta Labirintului
                       SECRET_ROOM
                           |
-           KITCHEN----    HALL    ---- LIBRARY
-                          |            |
-                          |           EXIT
+         KITCHEN  ----   HALL    ----  LIBRARY
+                          |              |
+                          |             EXIT
                           |
-                      ENTRANCE
+                       ENTRANCE
 
 ### Reguli de Joc
 - Foloseste comenzile de miscare (`UP`, `DOWN`, `LEFT`, `RIGHT`) pentru a naviga
