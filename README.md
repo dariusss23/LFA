@@ -18,7 +18,7 @@
         LIBRARY     ---LEFT--->    HALLWAY
         LIBRARY     ---DOWN--->    EXIT
         ```
-    - **Stare IniTialA (Start):** `ENTRANCE`
+    - **Stare Initiala (Start):** `ENTRANCE`
     - **Stari Finale (Stop):** `EXIT`
 
 ### Harta Labirintului
