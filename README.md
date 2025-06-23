@@ -3,7 +3,7 @@
 
 ## DFA
 
-1. Labirintul este un DFA (Automat Finit Determinist) definit In fiSierul `DFA.txt`:
+1. Labirintul este un DFA (Automat Finit Determinist) definit in fisierul `DFA.txt`:
     - **Stari (STATES):** `ENTRANCE`, `HALLWAY`, `KITCHEN`, `SECRET_ROOM`, `LIBRARY`, `EXIT`
     - **Simboluri (SIGMA):** `UP`, `DOWN`, `LEFT`, `RIGHT`, `PICK`, `DROP`
     - **TranziTii (RULES):**
